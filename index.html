@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!--
+      The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags
+    -->
+    <title>Default Starter Template</title>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <!--
+      HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries
+    -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+    <div class="container col-md-12">
+		<div class="row">
+			<div class="col-sm-12">
+				<button class="btn btn-default" id="render-button">Click to render</button>
+			</div>
+		</div>
+      <div class="row">
+		  <div class="col-sm-12" >
+				<ul id="target-for-template">
+
+				</ul>
+		  </div>
+	  </div>
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery-1.12.0.js"></script>
+    <!--
+      Include all compiled plugins (below), or include individual files as needed
+    -->
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/site.js" type="text/javascript"></script>
+    <script>
+      $(function() {});
+    </script>
+	<script type="text/html" id="example-template">
+		<li style="border: 1px solid #333; background-color: #eee; margin-bottom: 5px; padding: 5px;list-style-type: none;">
+			<h1>###TEMPLATETITLE###</h1>
+			<p style="font-style: italic">###TEMPLATECONTENT###</p>
+		</li>
+    </script>
+  </body>
+</html>
